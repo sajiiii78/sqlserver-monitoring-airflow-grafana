@@ -1,0 +1,17 @@
+apiVersion: 1
+datasources:
+  - name: PostgreSQL (sqlmon_staging)
+    uid: sqlmon-pg                       # the provisioned dashboard refers to this uid
+    type: postgres
+    access: proxy
+    url: $SQLMON_PG_HOST                 # host:port as seen from the Grafana container, e.g. host.docker.internal:5432
+    user: grafana_ro
+    database: sqlmon_staging
+    isDefault: true
+    editable: true
+    jsonData:
+      database: sqlmon_staging
+      sslmode: disable
+      postgresVersion: 1600              # PostgreSQL 16 -> 1600 (14 -> 1400)
+    secureJsonData:
+      password: $GRAFANA_RO_PASSWORD     # set as an environment variable of the Grafana container

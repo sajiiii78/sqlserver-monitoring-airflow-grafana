@@ -1,0 +1,10 @@
+apiVersion: 1
+providers:
+  - name: sqlmon
+    folder: SQL Server Monitoring
+    type: file
+    disableDeletion: false
+    allowUiUpdates: true                 # you may edit in the UI; edits persist in grafana.db
+    updateIntervalSeconds: 30
+    options:
+      path: /etc/grafana/provisioning/dashboards-json

@@ -1,0 +1,6 @@
+# Install Airflow FIRST with the official constraints file (Python 3.10):
+#   pip install "apache-airflow==2.10.5" \
+#     --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.10.5/constraints-3.10.txt"
+# Then:
+pyodbc
+psycopg2-binary
