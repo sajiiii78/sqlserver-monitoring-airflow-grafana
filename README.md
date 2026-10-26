@@ -279,3 +279,11 @@ tested on.
 ## License
 
 [MIT](LICENSE)
+
+## Screenshots
+
+![Airflow DAGs](docs/images/airflow-dags.png)
+
+## Author
+
+Sajjad - [@sajiiii78](https://github.com/sajiiii78)
